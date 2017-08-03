@@ -1,0 +1,22 @@
+@import '../index.css';
+
+@svg-load bg url(../images/pattern.svg) {
+/*    fill: #cfc;
+    path:nth-child(2) {
+        fill: #ff0;
+    }*/
+}
+
+.content {
+	width: 100%;
+	height: calc(100vh - var(--headerHeight));
+	background-image: svg-inline(bg);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	& h2 {
+		margin: 0;
+	}
+}

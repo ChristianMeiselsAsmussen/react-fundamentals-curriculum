@@ -1,0 +1,26 @@
+.forecast {
+	width : 1000px;
+	margin: 0 auto;
+	& .forecast-header {
+		font-family: cursive;
+		text-align: center;
+	}
+	& .forecast-container {
+		display : flex;
+		flex-wrap: wrap;
+		& .forecast-item {
+			width : 25%;
+			padding: 15px;
+			list-style-type: none;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			& img {
+				width: 100%;
+				height: auto;
+			}
+			& p {
+			}
+		}
+	}
+}
